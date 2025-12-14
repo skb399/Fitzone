@@ -1,18 +1,24 @@
-header {
-    background-color: #ffffff;
-    padding: 0 1rem;
-    position: fixed;
-    z-index: 99;
-    width: 100%;
-    box-shadow: 0 2px 2px #3a3a3a;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Macondo&display=swap');
+
+
+
+
+
+
+
+
+
+/* grid visualisation CSS for testing purposes only */
+
+.container,
+.row {
+    border: 2px solid black;
 }
 
-.menu-logo {
-    height: 48px;
-    max-height: 48px;
-    width: auto;
-    display: block;
+.col-12,
+.col-4,
+.col-6 {
+    border: 2px solid white;
+    background-color: lightgray;
 }
