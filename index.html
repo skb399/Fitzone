@@ -24,13 +24,53 @@
 <!-- Body with flexbox to push footer to bottom -->
 
 <body class="d-flex flex-column min-vh-100">
-
+    <!-- Navbar -->
+    <div>
+        <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="assets/images/fitzone-logo.png" width="auto"
+                        height="48px" alt="Fitzone Logo" class="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="classes.html">Classes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="trainers.html">Trainers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="membership.html">Membership</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
 
     <!--Header-->
     <header class="container">
         <!-- Hero Section -->
-        <div class="row">
-            <div class="col-12 col-xl-12">Fitzone hero section</div>
+        <div class="row" id="hero-section">
+            <div class="col-12 col-xl-12">
+                <h1>FitZone</h1>
+                <h2> Train strong. Move well. Belong.</h2>
+                <p>FitZone is a community-focused gym designed to support people at every stage of their fitness
+                    journey. Whether you’re just getting started or building strength and confidence, our space is
+                    welcoming, inclusive, and built around movement that feels good.</p>
+                <img src="assets/images/hero.webp"
+                    alt="Hero Image,shows a man using gym equipment, from behind so you can see his arms above his head pulling a bar down"
+                    class="hero-image">
+            </div>
         </div>
     </header>
     <!-- Main content, to hold all key sections of homepage, not a part of the grid structure -->
@@ -38,14 +78,6 @@
         <section class="container">
             <div class="row">
                 <div class="col-12">Facilites section with carousel</div>
-            </div>
-        </section>
-        <section class="container">
-            <div class="row">
-                <div class="col-12">Pricing Summary</div>
-                <div class="col-12 col-md-12 col-xl-4">Basic</div>
-                <div class="col-12 col-md-12 col-xl-4">Standard</div>
-                <div class="col-12 col-md-12 col-xl-4">Premium</div>
             </div>
         </section>
         <section class="container">
