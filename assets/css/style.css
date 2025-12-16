@@ -26,12 +26,14 @@ h6 {
     font-family: var(--primary-font);
     color: var(--primary-color);
     margin-bottom: 20px;
+    text-align: center;
 }
 
 p {
     font-family: var(--secondary-font);
     color: var(--light-highlight);
     margin-bottom: 15px;
+    text-align: center;
 }
 
 .menu-logo {
