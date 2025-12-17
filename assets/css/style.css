@@ -33,7 +33,7 @@ p {
     font-family: var(--secondary-font);
     color: var(--light-highlight);
     margin-bottom: 15px;
-    text-align: center;
+    justify-content: center;
 }
 
 .menu-logo {
