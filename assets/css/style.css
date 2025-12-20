@@ -33,7 +33,7 @@ p {
     font-family: var(--secondary-font);
     color: var(--light-highlight);
     margin-bottom: 15px;
-    justify-content: center;
+    text-align: center;
 }
 
 .menu-logo {
@@ -89,11 +89,6 @@ body {
     border-radius: 280px;
     margin: 2rem auto 0;
 }
-
-
-
-
-
 
 
 /* grid visualisation CSS for testing purposes only */
