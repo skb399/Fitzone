@@ -90,6 +90,57 @@ body {
     margin: 2rem auto 0;
 }
 
+/* Facillities Section Carousel */
+/* Ensure carousel takes full width of its container */
+#carouselExampleAutoplaying {
+    width: 100%;
+}
+
+/* Set fixed height for carousel and ensure images cover the area */
+#carouselExampleAutoplaying {
+    height: 450px;
+}
+
+#carouselExampleAutoplaying .carousel-inner,
+#carouselExampleAutoplaying .carousel-item {
+    height: 100%;
+}
+
+#carouselExampleAutoplaying img {
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Carousel Caption Styling */
+.carousel-title {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Custom position for captions below images */
+.carousel-caption-below {
+    position: static;
+    padding: 1rem;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    text-align: center;
+}
+
+/* Specific styling for captions below images by overriding bootstrap default */
+.carousel-caption.carousel-caption-below {
+    color: white;
+    background-color: var(--secondary-color);
+}
+
+/* Ensure text within captions is clearly visible by overriding bootstrap default */
+.carousel-caption.carousel-caption-below p,
+.carousel-caption.carousel-caption-below h5 {
+    color: white;
+}
+
+
 
 /* grid visualisation CSS for testing purposes only */
 
