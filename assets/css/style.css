@@ -49,17 +49,37 @@ p {
     background-color: var(--primary-color);
 }
 
+/* Navbar logo styling */
 #navbar .logo {
     height: 50px;
     width: auto;
     filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.6));
 }
 
-.menu-logo {
-    height: 48px;
-    max-height: 48px;
-    width: auto;
-    display: block;
+/* Navbar links hover effect styling (change colour, opacity and scale up slightly) */
+#navbar a:hover {
+    color: var(--light-highlight);
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+
+/* Navbar links styling (remove underline, change font colour, add bold, preps scale up transition) */
+#navbar a {
+    color: var(--highlight-color);
+    font-weight: bold;
+    font-size: 115%;
+    display: inline-block;
+    -webkit-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
+
+}
+
+/* Navbar links hover effect styling (change colour, opacity and scale up slightly) */
+#navbar a:hover {
+    color: var(--light-highlight);
+    opacity: 0.8;
+    transform: scale(1.1);
 }
 
 /*Body padding to prevent content being hidden behind fixed navbar*/
@@ -184,18 +204,18 @@ footer a {
 
 }
 
-/* Footer Contact links hover effect styling (change colour, opacity and scale up slightly) */
-footer a:hover {
-    color: var(--light-highlight);
-    opacity: 0.8;
-    transform: scale(1.1);
-}
-
 /* Footer logo styling */
 #contact .logo {
     height: 100px;
     width: auto;
     filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.6));
+}
+
+/* Footer Contact links hover effect styling (change colour, opacity and scale up slightly) */
+footer a:hover {
+    color: var(--light-highlight);
+    opacity: 0.8;
+    transform: scale(1.1);
 }
 
 /* Social media icons styling - overrides bootstrap default */
