@@ -25,6 +25,7 @@ h5,
 h6 {
     font-family: var(--primary-font);
     color: var(--primary-color);
+    margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -134,6 +135,8 @@ main {
     align-items: center;
     text-align: center;
     color: #fff;
+    pointer-events: none;
+    /* pointer-events Allows clicks to pass through */
 }
 
 /* Hero logo styling */
@@ -164,34 +167,27 @@ main {
     inset: 0;
     background: rgba(0, 0, 0, 0.4);
     z-index: 1;
+    pointer-events: none;
 }
 
 /*body padding to prevent content being hidden behind fixed navbar*/
 body {
     padding-top: 70px;
+    background-color: var(--secondary-color);
 }
 
 /* Facillities Section Carousel */
-/* Ensurescarousel takes full width of its container */
-#carouselExampleAutoplaying {
-    width: 100%;
-}
 
-/* Set fixed height for carousel and ensure images cover the area */
-#carouselExampleAutoplaying {
-    height: 450px;
-}
-
-/* Ensure carousel inner and items take full height */
-#carouselExampleAutoplaying .carousel-inner,
 #carouselExampleAutoplaying .carousel-item {
-    height: 100%;
+    height: 450px;
 }
 
 /* Ensure carousel images take full height and cover the area */
 #carouselExampleAutoplaying img {
+    width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
 }
 
 /* Carousel Caption Styling */
@@ -203,25 +199,25 @@ body {
 }
 
 /* Custom position for captions below images */
-.carousel-caption-below {
-    position: static;
+.carousel-caption {
+    position: absolute;
     padding: 1rem;
-    color: var(--primary-color);
     background-color: var(--secondary-color);
     text-align: center;
 }
 
 /* Specific styling for captions below images by overriding bootstrap default */
-.carousel-caption.carousel-caption-below {
+.carousel-caption.carousel-caption {
     color: white;
     background-color: var(--secondary-color);
 }
 
 /* Ensure text within captions is clearly visible by overriding bootstrap default */
-.carousel-caption.carousel-caption-below p,
-.carousel-caption.carousel-caption-below h5 {
+.carousel-caption.carousel-caption p,
+.carousel-caption.carousel-caption h5 {
     color: white;
 }
+
 
 
 /* Footer / Contact Section */
