@@ -298,6 +298,18 @@ footer a:hover {
 }
 
 
+/*Classes Page Styling*/
+/*Classes Card hover effect: lift and shadow */
+.card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+
 /* grid visualisation CSS for testing purposes only 
 .container,
 .row {
