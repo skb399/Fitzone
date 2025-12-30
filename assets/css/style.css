@@ -322,7 +322,21 @@ footer a:hover {
     text-align: center;
 }
 
-/* Responsive styling for timetable on smaller screens */
+/* Timetable header styling */
+.timetable th {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+}
+
+/* Timetable row hover effect */
+.timetable td:hover {
+    background-color: var(--primary-color);
+    font-weight: bold;
+}
+
+
+/* Responsive styling for timetable on smaller screens, allows user to scroll sideways */
 @media (max-width: 768px) {
     .timetable {
         display: block;
@@ -349,8 +363,6 @@ footer a:hover {
         border-radius: 0.5rem;
     }
 }
-
-
 
 /* grid visualisation CSS for testing purposes only 
 .container,
