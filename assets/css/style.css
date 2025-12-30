@@ -309,6 +309,48 @@ footer a:hover {
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
+/* Timetable Styling */
+.timetable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.timetable th,
+.timetable td {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Responsive styling for timetable on smaller screens */
+@media (max-width: 768px) {
+    .timetable {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+/* Hide timetable hint by default (desktop first) */
+.table-hint {
+    display: none;
+    font-size: 0.875rem;
+    color: var(--light-highlight);
+    margin-bottom: 0.5rem;
+}
+
+/* Show timetable hint only on smaller screens */
+@media (max-width: 767px) {
+    .table-hint {
+        display: block;
+        font-style: italic;
+        background: #f7f7f7;
+        padding: 0.5rem 0.75rem;
+        border-radius: 0.5rem;
+    }
+}
+
+
 
 /* grid visualisation CSS for testing purposes only 
 .container,
