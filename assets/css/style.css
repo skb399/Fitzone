@@ -378,6 +378,61 @@ trainers-text {
     margin: 0 auto;
 }
 
+/*Success Page Styling*/
+.success-image {
+    min-height: 100vh;
+    background-image: url("../images/success-bg.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Success Hero image Section Styling */
+.success-hero {
+    position: relative;
+    min-height: 100vh;
+    background-image: url("../images/success-image.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Dark/gradient overlay on success image for better text visibility */
+.success-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0.55));
+}
+
+/* Success content styling, allow text to be visible over image, shadow used to enhance readability, content centered */
+.success-content {
+    position: relative;
+    color: #fff;
+    z-index: 1;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/*Semi-transparent panel for success message, to increase readability, padding, content centered */
+.success-panel {
+    text-align: center;
+    padding: 2rem 2.5rem;
+    background: rgba(0, 0, 0, 0.65);
+    border-radius: 1rem;
+    color: #fff;
+    max-width: 600px;
+}
+
 /* grid visualisation CSS for testing purposes only 
 .container,
 .row {
