@@ -364,6 +364,20 @@ footer a:hover {
     }
 }
 
+/*Trainers Page Styling*/
+trainers-text {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Centered list styling for trainers page */
+.centered-list {
+    display: inline-block;
+    text-align: left;
+    padding-left: 1.25rem;
+    margin: 0 auto;
+}
+
 /* grid visualisation CSS for testing purposes only 
 .container,
 .row {
