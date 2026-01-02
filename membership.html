@@ -86,72 +86,114 @@
             <div class="row">
 
                 <div class="col-12">
-                    <h2>Pricing Summary</h2>
+                    <h2>Memberships</h2>
+                    <p>We offer simple, flexible memberships designed to fit around real lives. Whether you train
+                        occasionally or want full access to everything we offer, there’s an option to suit your routine
+                        and goals.<br> All memberships are monthly rolling, with no long-term commitment.</p>
                 </div>
                 <div class="col-12 col-md-4 col-xl-4 justify-content-center">
                     <div class="card h-100 w-100">
                         <div class="card-body text-center">
-                            <h3 class="card-title sub-heading-color">Basic Plan</h3>
-                            <p class="card-text"><em>Off-peak gym access</em>
-                            </p>
+                            <h3 class="card-title sub-heading-color">Basic Membership</h3>
+                            <p class="card-text">
+                            <ul>
+                                <li>Off-peak gym access</li>
+                                <li>Ideal for those with flexible schedules</li>
+                                <li>Access to gym facilities during quieter hours</li>
+                            </ul>
+                            A great option if you prefer to train independently and avoid busy periods.</p>
                             <p><strong>£15/per month</strong></p>
-                            <a class="btn btn-primary" href="membership.html">View Plans</a>
+                            <a class="btn btn-primary" href="#membership-form">Sign Up</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-4 col-xl-4 justify-content-center">
                     <div class="card h-100 w-100">
                         <div class="card-body text-center">
-                            <h3 class="card-title sub-heading-color">Standard Plan</h3>
-                            <p class="card-text"><em>Full gym access and group classes</em>
+                            <h3 class="card-title sub-heading-color">Standard Membership</h3>
+                            <p class="card-text">
+                            <ul>
+                                <li>Full gym access</li>
+                                <li>Unlimited group classes</li>
+                                <li>Access during peak and off-peak hours</li>
+                            </ul>Our most popular option, offering the best balance of flexibility, classes, and value.
                             </p>
-                            <p><strong>£25/per month</strong></p>
-                            <a class="btn btn-primary" href="membership.html">View Plans</a>
+                            <p><strong>£25 per month</strong></p>
+                            <a class="btn btn-primary" href="#membership-form">Sign Up</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-4 col-xl-4 justify-content-center">
                     <div class="card h-100 w-100">
                         <div class="card-body text-center">
-                            <h3 class="card-title sub-heading-color">Premium Plan</h3>
-                            <p class="card-text"><em>Full access, Health Suite, plus discounted personal training</em>
-                            </p>
-                            <p><strong>£60/per month</strong></p>
-                            <a class="btn btn-primary" href="membership.html">View Plans</a>
+                            <h3 class="card-title sub-heading-color">Premium Membership</h3>
+                            <p class="card-text">
+                            <ul>
+                                <li>Full gym and class access</li>
+                                <li>Discounted personal training sessions</li>
+                                <li>Priority booking for workshops and special events</li>
+                            </ul>Ideal for those looking for extra support, progression, and added benefits.</p>
+                            <p><strong>£60 per month</strong></p>
+                            <a class="btn btn-primary" href="#membership-form">Sign Up</a>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <h2>Pricing & Membership Details</h2>
+            <p>Our pricing is transparent and designed to be accessible.<br><strong>Key details:<br></strong> Monthly
+                rolling memberships. No long-term contracts. Student and off-peak discounts available. Clear pricing
+                with no hidden fees.<br><strong>If you’re unsure which membership is right for you, we’re happy to
+                    help.</strong></p>
         </section>
 
-        <!--Membership Registration Form-->
-        <section class="container mt-5 mb-5">
+        <!-- Membership Registration Form -->
+        <section class="container mt-5 mb-5" id="membership-form">
             <div class="row">
                 <div class="col-12">
                     <h2>Membership Registration</h2>
-                    <form>
+                    <!--Form does not POST/PULL to a server as there is no backend implementation yet-->
+                    <form action="success.html">
+
                         <div class="mb-3">
                             <label for="fullName" class="form-label">Full Name</label>
-                            <input type="text" class="form-control" id="fullName" required>
+                            <input type="text" class="form-control" id="fullName" name="fullName" autocomplete="name"
+                                required>
                         </div>
+
                         <div class="mb-3">
                             <label for="email" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="email" required>
+                            <input type="email" class="form-control" id="email" name="email" autocomplete="email"
+                                required>
                         </div>
+
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" autocomplete="tel"
+                                inputmode="tel" placeholder="e.g. 07xxx xxxxxx" required>
+                        </div>
+
                         <div class="mb-3">
                             <label for="membershipType" class="form-label">Membership Type</label>
-                            <select class="form-select" id="membershipType" required>
+                            <select class="form-select" id="membershipType" name="membershipType" required>
                                 <option value="" disabled selected>Select a plan</option>
-                                <option value="basic">Basic Plan - £15/month</option>
-                                <option value="standard">Standard Plan - £25/month</option>
-                                <option value="premium">Premium Plan - £60/month</option>
+                                <option value="basic">Basic – £15 per month</option>
+                                <option value="standard">Standard – £25 per month</option>
+                                <option value="premium">Premium – £60 per month</option>
                             </select>
                         </div>
+
+                        <button class="btn btn-primary" type="submit">
+                            Register Interest
+                        </button>
+                        <p class="mt-3 small text-muted">
+                            By submitting this form, you agree that we may contact you about your membership enquiry. We
+                            will not share your details with third parties.
+                        </p>
                     </form>
                 </div>
             </div>
         </section>
-
         <!-- Footer / contact section -->
         <!-- mt-auto added to push footer to the bottom of the page -->
         <footer id="contact" class="mt-auto">
