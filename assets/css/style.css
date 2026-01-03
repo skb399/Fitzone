@@ -421,8 +421,6 @@ trainers-text {
     justify-content: center;
 }
 
-
-
 /*Semi-transparent panel for success message, to increase readability, padding, content centered */
 .success-panel {
     text-align: center;
@@ -431,6 +429,56 @@ trainers-text {
     border-radius: 1rem;
     color: #fff;
     max-width: 600px;
+}
+
+/*Wellbeing Page Styling*/
+/*Wellbeing Hero image Section Styling */
+.wellbeing-hero {
+    position: relative;
+    background-image: url("../images/wellbeing-hero.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 5rem 0;
+}
+
+/* Dark overlay on wellbeing hero image for better text visibility */
+.wellbeing-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+/* Wellbeing content styling, allow text to be visible over image, content centered */
+.wellbeing-content {
+    position: relative;
+    z-index: 1;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Wellbeing content headings styling */
+.wellbeing-content h2,
+.wellbeing-content h3 {
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Semi-transparent panel for wellbeing content, to increase readability, padding, content centered */
+.wellbeing-panel {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 3rem;
+    border-radius: 1rem;
+    color: #ffffff;
+}
+
+/* Force text colour inside panel */
+.wellbeing-panel p {
+    color: #ffffff;
 }
 
 /* grid visualisation CSS for testing purposes only 
