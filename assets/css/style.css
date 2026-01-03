@@ -442,13 +442,6 @@ trainers-text {
     padding: 5rem 0;
 }
 
-/* Dark overlay on wellbeing hero image for better text visibility */
-.wellbeing-overlay {
-    position: absolute;
-    inset: 0;
-    background-color: rgba(0, 0, 0, 0.55);
-}
-
 /* Wellbeing content styling, allow text to be visible over image, content centered */
 .wellbeing-content {
     position: relative;
