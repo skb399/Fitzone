@@ -25,7 +25,7 @@ h4,
 h5,
 h6 {
     font-family: var(--primary-font);
-    color: var(--primary-color);
+    color: var(--highlight-color);
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
@@ -33,7 +33,7 @@ h6 {
 
 p {
     font-family: var(--secondary-font);
-    color: var(--light-highlight);
+    color: var(--highlight-color);
     margin-bottom: 15px;
     text-align: center;
 }
@@ -173,6 +173,24 @@ main {
 body {
     padding-top: 70px;
     background-color: var(--secondary-color);
+}
+
+/*Main Section Styling*/
+/* Main background image styling */
+.main-background {
+    position: relative;
+    background-image: url("../images/main-background.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*Card Custom Styling*/
+.main-background .card {
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
 /* Facillities Section Carousel */
