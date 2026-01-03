@@ -176,7 +176,7 @@ body {
 }
 
 /*Main Section Styling*/
-/* Main background image styling */
+/* Main background image styling - image stretched to fit section */
 .main-background {
     position: relative;
     background-image: url("../images/main-background.webp");
@@ -235,7 +235,61 @@ body {
     color: white;
 }
 
+/* Make carousel images taller on larger screens */
+.carousel-item img {
+    height: 80vh;
+    object-fit: cover;
+}
 
+/* Desktop/tablet: your normal caption styling */
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+/* Media Query tablets and smaller: keep caption visible inside the slide (It was previously hidden due to positioning) */
+@media (max-width: 768px) {
+    .carousel-caption {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: auto;
+        transform: none;
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+        background: rgba(0, 0, 0, 0.85);
+        padding: 1rem;
+        text-align: center;
+        display: block;
+    }
+
+    /* Make carousel images shorter on mobile screens so they can fit */
+    .carousel-item img {
+        height: 60vh;
+        object-fit: cover;
+    }
+}
+
+
+/* Carousel image styling */
+.carousel-item img {
+    width: 100%;
+    height: 70vh;
+    object-fit: contain;
+    object-position: center;
+
+}
+
+/* Desktop and up - taller on desktop */
+@media (min-width: 992px) {
+    .carousel-item img {
+        height: 120vh;
+
+    }
+}
 
 /* Footer / Contact Section */
 /* Footer text alignment */
