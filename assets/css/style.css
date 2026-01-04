@@ -46,19 +46,29 @@ p {
 /* Global button style */
 .btn-primary {
     background-color: #000000;
-    border-color: #000000;
+    border-color: var(--primary-color);
     color: #ffffff;
 }
 
-/* Rounded corners for buttons */
+/* Button Styling - Increase size, rounded corners */
 .btn {
     border-radius: 0.75rem;
+    width: 150px;
+    height: 43px;
+    border-radius: 0.75rem;
+    /*Use inline-flex to allow centering of text*/
+    display: inline-flex;
+    /* Center text both vertically and horizontally */
+    align-items: center;
+    justify-content: center;
+    /* Bold font for better readability */
+    font-weight: bold;
 }
 
 /* Hover state */
 .btn-primary:hover,
 .btn-primary:focus {
-    background-color: #222222;
+    background-color: var(--light-highlight);
     border-color: #222222;
     color: #ffffff;
 }
@@ -166,8 +176,6 @@ main {
     align-items: center;
     text-align: center;
     color: #fff;
-    pointer-events: none;
-    /* pointer-events Allows clicks to pass through */
 }
 
 /* Hero logo styling */
@@ -178,9 +186,50 @@ main {
     display: block;
 }
 
+
+
+/*Media Queries for Hero Section*/
+/* Adjust hero logo padding on small screens */
 @media (max-width: 425px) {
     .hero-logo {
-        padding-top: 30px;
+        padding-top: 113px;
+        padding-left: 26px;
+    }
+}
+
+/*Adjust hero logo padding on tablet screens*/
+@media (min-width: 426px) and (max-width: 768px) {
+    .hero-logo {
+        padding-top: 80px;
+        padding-left: 20px;
+    }
+}
+
+/*Adjust hero logo padding on laptop screens*/
+@media (min-width: 769px) and (max-width: 1024px) {
+    .hero-logo {
+        padding-top: 60px;
+        padding-left: 15px;
+    }
+}
+
+/*Adjust hero logo padding on large screens*/
+@media (min-width: 1025px) {
+    .hero-logo {
+        padding-top: 0px;
+        padding-left: 33px;
+    }
+
+    /* Adjust h2 padding on large screens */
+    #hero-section h2 {
+        padding-left: 51px;
+    }
+}
+
+/* Increase here logo size on large screens */
+@media (min-width: 1025px) {
+    .hero-logo {
+        width: 500px;
     }
 }
 
@@ -189,16 +238,6 @@ main {
     .hero-container {
         height: 70vh;
     }
-}
-
-/* Dark overlay on hero image for better text visibility */
-.hero-container::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.4);
-    z-index: 1;
-    pointer-events: none;
 }
 
 /*body padding to prevent content being hidden behind fixed navbar*/
@@ -404,7 +443,8 @@ footer a:hover {
 /* Accessibility Section - scroll-margin-top counteracts fixed navbar and body padding by adding scroll margin - learnt from "https://getpublii.com/blog/one-line-css-solution-to-prevent-anchor-links-from-scrolling-behind-a-sticky-header.html" */
 #accessibility,
 #opening-times,
-#map {
+#map,
+#pricing {
     scroll-margin-top: 100px;
 }
 
