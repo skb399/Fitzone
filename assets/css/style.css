@@ -378,7 +378,7 @@ footer a:hover {
     filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.6));
 }
 
-/* Social media icons styling, overrides bootstrap default, preps for scale up transiyion on hover */
+/* Social media icons styling, overrides bootstrap default, preps for scale up transition on hover */
 #contact .social-links i {
     color: var(--highlight-color);
     font-size: 2.5rem;
@@ -401,13 +401,26 @@ footer a:hover {
     justify-content: center;
 }
 
+/* Accessibility Section - scroll-margin-top counteracts fixed navbar and body padding by adding scroll margin - learnt from "https://getpublii.com/blog/one-line-css-solution-to-prevent-anchor-links-from-scrolling-behind-a-sticky-header.html" */
+#accessibility,
+#opening-times,
+#map {
+    scroll-margin-top: 100px;
+}
+
+/* Extra scroll margin for contact form as it is larger than the other sections */
+#contact-form {
+    scroll-margin-top: 200px;
+}
+
 
 /*Classes Page Styling*/
-/*Classes Card hover effect: lift and shadow */
+/* Card hover effect - smooth lift and shadow increase */
 .card {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+/* On hover, lift the card and add a more pronounced shadow */
 .card:hover {
     transform: translateY(-6px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
