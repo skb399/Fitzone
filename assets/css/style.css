@@ -17,15 +17,18 @@
 
 }
 
-/* Global Styling for Headings and Paragraphs */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+/* Global Styling for Headings and Paragraphs - Headings have red background and rounded corners, white text, padding*/
+main h1,
+main h2,
+main h3,
+main h4,
+main h5,
+main h6 {
     font-family: var(--primary-font);
     color: var(--highlight-color);
+    background-color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    border-radius: 0.75rem;
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
@@ -37,6 +40,35 @@ p {
     margin-bottom: 15px;
     text-align: center;
 }
+
+/*Global Styling for buttons*/
+
+/* Global button style */
+.btn-primary {
+    background-color: #000000;
+    border-color: #000000;
+    color: #ffffff;
+}
+
+/* Rounded corners for buttons */
+.btn {
+    border-radius: 0.75rem;
+}
+
+/* Hover state */
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #222222;
+    border-color: #222222;
+    color: #ffffff;
+}
+
+/* Active / pressed state */
+.btn-primary:active {
+    background-color: #000000;
+    border-color: #000000;
+}
+
 
 /*Navbar*/
 #navbar {
@@ -379,6 +411,13 @@ footer a:hover {
 .card:hover {
     transform: translateY(-6px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Centered white text inside class cards */
+.card h3,
+.card p {
+    text-align: center;
+    color: var(--highlight-color)
 }
 
 /* Timetable Styling */
