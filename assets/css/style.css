@@ -233,10 +233,24 @@ main {
     }
 }
 
-/* Increase hero section height on larger screens */
+/* Increase hero section height on small screens - so that sign up button is visible */
+@media (max-width: 427px) {
+    .hero-container {
+        height: 80vh;
+    }
+}
+
+/* Increase hero section height on tablet screens - so that sign up button is visible */
 @media (min-width: 768px) {
     .hero-container {
-        height: 70vh;
+        height: 80vh;
+    }
+}
+
+/* Increase hero section height on larger screens - so that sign up button is visible */
+@media (min-width: 1025px) {
+    .hero-container {
+        height: 100vh;
     }
 }
 
@@ -259,7 +273,7 @@ body {
 /*Card Custom Styling*/
 .main-background .card {
     background-color: var(--primary-color);
-    border: none;
+    border: 1px solid var(--highlight-color);
     border-radius: 0.75rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
@@ -500,15 +514,6 @@ footer a:hover {
 }
 
 
-/* Responsive styling for timetable on smaller screens, allows user to scroll sideways */
-@media (max-width: 768px) {
-    .timetable {
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
-    }
-}
-
 /* Hide timetable hint by default (desktop first) */
 .table-hint {
     display: none;
@@ -526,6 +531,16 @@ footer a:hover {
         padding: 0.5rem 0.75rem;
         border-radius: 0.5rem;
     }
+}
+
+/* Timetable day card styling for mobile view */
+.timetable-day {
+    border: 1px solid var(--highlight-color);
+    border-radius: 0.75rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: var(--primary-color);
+    color: var(--highlight-color);
 }
 
 /*Trainers Page Styling*/

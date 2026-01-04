@@ -167,54 +167,96 @@
                             spot via
                             the FitZone app or at reception.</p>
                     </div>
-                    <table class="timetable">
-                        <caption>Weekly Group Class Timetable</caption>
-                        <p class="table-hint">On smaller screens, scroll sideways to view the full timetable.</p>
-                        <thead>
-                            <tr>
-                                <th scope="col">Day</th>
-                                <th scope="col">Morning</th>
-                                <th scope="col">Evening</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Monday</th>
-                                <td>7:00 am – HIIT</td>
-                                <td>6:00 pm – Strength &amp; Conditioning</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Tuesday</th>
-                                <td>7:00 am – Yoga &amp; Mobility</td>
-                                <td>6:30 pm – Bootcamp</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Wednesday</th>
-                                <td>7:00 am – HIIT</td>
-                                <td>6:00 pm – Yoga &amp; Mobility</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Thursday</th>
-                                <td>7:00 am – Strength &amp; Conditioning</td>
-                                <td>6:30 pm – HIIT</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Friday</th>
-                                <td>8:00 am – Bootcamp</td>
-                                <td>No evening class</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Saturday</th>
-                                <td>9:30 am – Bootcamp</td>
-                                <td>No evening class</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Sunday</th>
-                                <td>No classes</td>
-                                <td>No classes</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <!-- Timetable for medium screens and up, "d-none d-md-block" shows only on medium screens and up -->
+                    <div class="d-none d-md-block">
+                        <table class="timetable">
+                            <caption>Weekly Group Class Timetable</caption>
+                            <p class="table-hint">On smaller screens, scroll sideways to view the full timetable.</p>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Day</th>
+                                    <th scope="col">Morning</th>
+                                    <th scope="col">Evening</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Monday</th>
+                                    <td>7:00 am – HIIT</td>
+                                    <td>6:00 pm – Strength &amp; Conditioning</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Tuesday</th>
+                                    <td>7:00 am – Yoga &amp; Mobility</td>
+                                    <td>6:30 pm – Bootcamp</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Wednesday</th>
+                                    <td>7:00 am – HIIT</td>
+                                    <td>6:00 pm – Yoga &amp; Mobility</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Thursday</th>
+                                    <td>7:00 am – Strength &amp; Conditioning</td>
+                                    <td>6:30 pm – HIIT</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Friday</th>
+                                    <td>8:00 am – Bootcamp</td>
+                                    <td>No evening class</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Saturday</th>
+                                    <td>9:30 am – Bootcamp</td>
+                                    <td>No evening class</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Sunday</th>
+                                    <td>No classes</td>
+                                    <td>No classes</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- Alternative timetable for small screens, "d-md-none" hides from medium screens and up -->
+                    <div class="d-block d-md-none">
+                        <div class="timetable-day">
+                            <h3>Monday</h3>
+                            <p><strong>Morning:</strong> 7:00 am – HIIT</p>
+                            <p><strong>Evening:</strong> 6:00 pm – Strength & Conditioning</p>
+                        </div>
+
+                        <div class="timetable-day">
+                            <h3>Tuesday</h3>
+                            <p><strong>Morning:</strong> 7:00 am – Yoga & Mobility</p>
+                            <p><strong>Evening:</strong> 6:30 pm – Bootcamp</p>
+                        </div>
+                        <div class="timetable-day">
+                            <h3>Wednesday</h3>
+                            <p><strong>Morning:</strong> 7:00 am – HIIT</p>
+                            <p><strong>Evening:</strong> 6:00 pm – Yoga & Mobility</p>
+                        </div>
+                        <div class="timetable-day">
+                            <h3>Thursday</h3>
+                            <p><strong>Morning:</strong> 7:00 am – Strength & Conditioning</p>
+                            <p><strong>Evening:</strong> 6:30 pm – HIIT</p>
+                        </div>
+                        <div class="timetable-day">
+                            <h3>Friday</h3>
+                            <p><strong>Morning:</strong> 8:00 am – Bootcamp</p>
+                            <p><strong>Evening:</strong> No evening class</p>
+                        </div>
+                        <div class="timetable-day">
+                            <h3>Saturday</h3>
+                            <p><strong>Morning:</strong> 9:30 am – Bootcamp</p>
+                            <p><strong>Evening:</strong> No evening class</p>
+                        </div>
+                        <div class="timetable-day">
+                            <h3>Sunday</h3>
+                            <p><strong>Morning:</strong> No classes</p>
+                            <p><strong>Evening:</strong> No classes</p>
+                        </div>
+                    </div>
             </section>
             <!-- Footer / contact section -->
             <!-- mt-auto added to push footer to the bottom of the page -->
