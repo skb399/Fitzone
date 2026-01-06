@@ -270,6 +270,97 @@ body {
     background-color: var(--secondary-color);
 }
 
+/* Footer / Contact Section */
+/* Footer text alignment */
+footer {
+    text-align: center;
+}
+
+/* Footer / Contact Section Styling */
+#contact {
+    background-color: var(--primary-color);
+    color: white;
+    padding-top: 2.5rem;
+    padding-bottom: .5rem;
+
+}
+
+/* Footer / Contact Section Headings Styling */
+#contact h2,
+#contact h3,
+#contact h4,
+#contact h5,
+#contact h6 {
+    color: var(--highlight-color);
+}
+
+#contact {
+    color: var(--highlight-color);
+}
+
+/* Footer Contact links styling (remove underline, change font colour, add bold, preps scale up transition) */
+footer a {
+    text-decoration: none;
+    color: var(--highlight-color);
+    font-weight: bold;
+    font-size: 115%;
+    display: inline-block;
+    -webkit-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
+
+}
+
+/* Footer Contact links hover effect styling (change colour, opacity and scale up slightly) */
+footer a:hover {
+    color: var(--light-highlight);
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+
+/* Footer logo styling - addded drop shadow for better visibility */
+#contact .logo {
+    height: 100px;
+    width: auto;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.6));
+}
+
+/* Social media icons styling, overrides bootstrap default, preps for scale up transition on hover */
+#contact .social-links i {
+    color: var(--highlight-color);
+    font-size: 2.5rem;
+    -webkit-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
+}
+
+#contact .social-links i:hover {
+    color: var(--light-highlight);
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+
+/* Spacing for social media links */
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+/* Accessibility Section - scroll-margin-top counteracts fixed navbar and body padding by adding scroll margin - learnt from "https://getpublii.com/blog/one-line-css-solution-to-prevent-anchor-links-from-scrolling-behind-a-sticky-header.html" */
+#accessibility,
+#opening-times,
+#map,
+#pricing {
+    scroll-margin-top: 100px;
+}
+
+/* Extra scroll margin for contact form as it is larger than the other sections */
+#contact-form {
+    scroll-margin-top: 200px;
+}
+
 /*Main Section Styling*/
 /* Main background image styling - image stretched to fit section */
 .main-background {
@@ -386,109 +477,7 @@ body {
     }
 }
 
-/* Footer / Contact Section */
-/* Footer text alignment */
-footer {
-    text-align: center;
-}
-
-/* Footer / Contact Section Styling */
-#contact {
-    background-color: var(--primary-color);
-    color: white;
-    padding-top: 2.5rem;
-    padding-bottom: .5rem;
-
-}
-
-/* Footer / Contact Section Headings Styling */
-#contact h2,
-#contact h3,
-#contact h4,
-#contact h5,
-#contact h6 {
-    color: var(--highlight-color);
-}
-
-#contact {
-    color: var(--highlight-color);
-}
-
-/* Footer Contact links styling (remove underline, change font colour, add bold, preps scale up transition) */
-footer a {
-    text-decoration: none;
-    color: var(--highlight-color);
-    font-weight: bold;
-    font-size: 115%;
-    display: inline-block;
-    -webkit-transition: color 0.3s ease-in-out;
-    -o-transition: color 0.3s ease-in-out;
-    transition: color 0.3s ease-in-out;
-
-}
-
-/* Footer Contact links hover effect styling (change colour, opacity and scale up slightly) */
-footer a:hover {
-    color: var(--light-highlight);
-    opacity: 0.8;
-    transform: scale(1.1);
-}
-
-/* Footer logo styling - addded drop shadow for better visibility */
-#contact .logo {
-    height: 100px;
-    width: auto;
-    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.6));
-}
-
-/* Social media icons styling, overrides bootstrap default, preps for scale up transition on hover */
-#contact .social-links i {
-    color: var(--highlight-color);
-    font-size: 2.5rem;
-    -webkit-transition: color 0.3s ease-in-out;
-    -o-transition: color 0.3s ease-in-out;
-    transition: color 0.3s ease-in-out;
-}
-
-#contact .social-links i:hover {
-    color: var(--light-highlight);
-    opacity: 0.8;
-    transform: scale(1.1);
-}
-
-/* Spacing for social media links */
-
-.social-links {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-}
-
-/* Accessibility Section - scroll-margin-top counteracts fixed navbar and body padding by adding scroll margin - learnt from "https://getpublii.com/blog/one-line-css-solution-to-prevent-anchor-links-from-scrolling-behind-a-sticky-header.html" */
-#accessibility,
-#opening-times,
-#map,
-#pricing {
-    scroll-margin-top: 100px;
-}
-
-/* Extra scroll margin for contact form as it is larger than the other sections */
-#contact-form {
-    scroll-margin-top: 200px;
-}
-
-
 /*Classes Page Styling*/
-/* Card hover effect - smooth lift and shadow increase */
-.card {
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-/* On hover, lift the card and add a more pronounced shadow */
-.card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-}
 
 /* Centered white text inside class cards */
 .card h3,
@@ -557,6 +546,21 @@ footer a:hover {
 trainers-text {
     margin-bottom: 2rem;
     text-align: center;
+}
+
+/* Keeps email hyperlinks text white like the rest of text */
+.card a {
+    color: var(--highlight-color);
+    display: inline-block;
+    -webkit-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Email hyperlinks scale up on hover*/
+.card a:hover {
+    color: var(--light-highlight);
+    transform: scale(1.1);
 }
 
 /* Centered list styling for trainers page */
