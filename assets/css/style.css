@@ -28,11 +28,19 @@ main h6 {
     color: var(--highlight-color);
     background-color: var(--primary-color);
     padding: 0.5rem 1rem;
+    border: 1px solid var(--highlight-color);
     border-radius: 0.75rem;
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
     font-weight: bold;
+}
+
+/*Remove borders from headings inside cards and footer */
+.card h3,
+.card h5,
+footer h6 {
+    border: none;
 }
 
 p {
