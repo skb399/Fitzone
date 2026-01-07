@@ -44,14 +44,28 @@ footer h6 {
     border: none;
 }
 
+/*Styling for paragraphs */
 p {
     font-family: var(--secondary-font);
+    /* Increased margin for better spacing */
     margin-top: 30px;
     color: var(--highlight-color);
     margin-bottom: 27px;
     text-align: center;
+    /* Bold font for better readability */
     font-weight: bold;
+
 }
+
+/* Styling for wellbeing certain paragraphs to improve readability */
+.panel-text p {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+}
+
+
 
 /*Global Styling for buttons*/
 
