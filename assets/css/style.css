@@ -121,8 +121,6 @@ p {
     font-weight: bold;
     font-size: 115%;
     display: inline-block;
-    -webkit-transition: color 0.3s ease-in-out;
-    -o-transition: color 0.3s ease-in-out;
     transition: color 0.3s ease-in-out;
 
 }
@@ -142,8 +140,6 @@ main {
     margin: 0;
     box-sizing: border-box;
 }
-
-
 
 /*Hero Section*/
 #hero-section {
@@ -195,8 +191,6 @@ main {
     padding-left: 0;
     display: block;
 }
-
-
 
 /*Media Queries for Hero Section*/
 /* Adjust hero logo padding on small screens */
@@ -305,8 +299,6 @@ footer a {
     font-weight: bold;
     font-size: 115%;
     display: inline-block;
-    -webkit-transition: color 0.3s ease-in-out;
-    -o-transition: color 0.3s ease-in-out;
     transition: color 0.3s ease-in-out;
 
 }
@@ -329,8 +321,8 @@ footer a:hover {
 #contact .social-links i {
     color: var(--highlight-color);
     font-size: 2.5rem;
-    -webkit-transition: color 0.3s ease-in-out;
-    -o-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
     transition: color 0.3s ease-in-out;
 }
 
@@ -341,14 +333,13 @@ footer a:hover {
 }
 
 /* Spacing for social media links */
-
 .social-links {
     display: flex;
     gap: 1rem;
     justify-content: center;
 }
 
-/* Accessibility Section - scroll-margin-top counteracts fixed navbar and body padding by adding scroll margin - learnt from "https://getpublii.com/blog/one-line-css-solution-to-prevent-anchor-links-from-scrolling-behind-a-sticky-header.html" */
+/* Accessibility Section - scroll-margin-top counteracts fixed navbar and body padding by adding scroll margin*/
 #accessibility,
 #opening-times,
 #map,
@@ -552,8 +543,6 @@ trainers-text {
 .card a {
     color: var(--highlight-color);
     display: inline-block;
-    -webkit-transition: color 0.3s ease-in-out;
-    -o-transition: color 0.3s ease-in-out;
     transition: color 0.3s ease-in-out;
 }
 
@@ -666,18 +655,3 @@ trainers-text {
 .wellbeing-panel p {
     color: #ffffff;
 }
-
-/* grid visualisation CSS for testing purposes only 
-.container,
-.row {
-    border: 2px solid black;
-}
-
-.col-12,
-.col-4,
-.col-6 {
-    border: 2px solid white;
-    background-color: lightgray;
-}
-
-*/
