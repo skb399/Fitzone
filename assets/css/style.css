@@ -10,7 +10,8 @@
     /* Deep red */
     --secondary-color: #0F0F0F;
     /* Charcoal Black */
-    --highlight-color: #F2F2F2;
+    --highlight-color: #FFFFFF;
+    ;
     /* Off White */
     --light-highlight: #6E6E6E;
     /* Steel Gray */
@@ -539,7 +540,7 @@ trainers-text {
     text-align: center;
 }
 
-/* Keeps email hyperlinks text white like the rest of text */
+/* Keeps email hyperlinks text white like the rest of text preps transition */
 .card a {
     color: var(--highlight-color);
     display: inline-block;
@@ -580,16 +581,6 @@ trainers-text {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-/* Dark/gradient overlay on success image for better text visibility */
-.success-overlay {
-    position: absolute;
-    inset: 0;
-    background-color: rgba(0, 0, 0, 0.55);
-    background: linear-gradient(to bottom,
-            rgba(0, 0, 0, 0.75),
-            rgba(0, 0, 0, 0.55));
 }
 
 /* Success content styling, allow text to be visible over image, shadow used to enhance readability, content centered */
