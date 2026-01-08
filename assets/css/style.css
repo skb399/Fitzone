@@ -179,23 +179,28 @@ main {
     object-fit: cover;
 }
 
-/* Hero Section Styling */
+/* Hero Section Styling - Fixed section height issue*/
 .hero-container {
     position: relative;
-    height: 60vh;
+    /* Set a fixed height for the hero section */
+    min-height: 70vh;
+    max-height: 75vh;
+    width: 100%;
     overflow: hidden;
+    /* Ensure the image covers the entire section so its not distorted */
+    object-fit: cover;
 }
 
 /* Hero overlay styling*/
 .hero-overlay {
     position: absolute;
     inset: 0;
-    z-index: 2;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     text-align: center;
+    padding: 2rem 1rem;
     color: #fff;
 }
 
