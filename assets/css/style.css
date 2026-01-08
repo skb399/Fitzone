@@ -187,6 +187,7 @@ main {
     box-sizing: border-box;
 }
 
+/* Navbar collapse styling for small screens */
 .navbar-collapse {
     /* Navbar collapse on red background to improve readability */
     background-color: var(--primary-color);
@@ -359,6 +360,7 @@ footer {
     color: var(--highlight-color);
 }
 
+/* Footer / Contact Section Paragraphs Styling */
 #contact {
     color: var(--highlight-color);
 }
@@ -372,6 +374,17 @@ footer a {
     display: inline-block;
     transition: color 0.3s ease-in-out;
 
+}
+
+/* Footer list item spacing and font size increase */
+footer ul li {
+    margin-bottom: 0.5rem;
+    font-size: 110%;
+}
+
+/* Footer column padding for better spacing */
+.footer-column {
+    padding: 1rem;
 }
 
 /* Footer Contact links hover effect styling (change colour, opacity and scale up slightly) */
@@ -397,17 +410,18 @@ footer a:hover {
     transition: color 0.3s ease-in-out;
 }
 
+/* Social media links spacing */
+.social-links a {
+    display: inline-block;
+    margin: 0 0.4rem;
+    font-size: 1.5rem;
+}
+
+/* Social media icons hover effect styling (change colour, opacity and scale up slightly) */
 #contact .social-links i:hover {
     color: var(--light-highlight);
     opacity: 0.8;
     transform: scale(1.1);
-}
-
-/* Spacing for social media links */
-.social-links {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
 }
 
 /* Accessibility Section - scroll-margin-top counteracts fixed navbar and body padding by adding scroll margin*/
