@@ -168,7 +168,9 @@ main {
 #hero-section h1,
 #hero-section h2,
 #hero-section p {
-    margin-bottom: 1rem;
+    margin-top: -2rem;
+    padding-bottom: 11px;
+    text-shadow: var(--secondary-color);
 }
 
 /* Hero image styling */
@@ -203,6 +205,17 @@ main {
     padding: 2rem 1rem;
     color: #fff;
 }
+
+/* Hero overlay heading styling with text shadow for better readability */
+.hero-overlay h1 {
+    color: #ffffff;
+    /* Text outline for better readability on all screen sizes */
+    -webkit-text-stroke: 1.5px #000000;
+    /* Spacing and bold for emphasis - to help readability */
+    letter-spacing: 0.03em;
+    font-weight: 700;
+}
+
 
 /* Hero logo styling */
 .hero-logo {
@@ -240,8 +253,9 @@ main {
 /*Adjust hero logo padding on large screens*/
 @media (min-width: 1025px) {
     .hero-logo {
-        padding-top: 0px;
-        padding-left: 33px;
+        padding-top: 32px;
+        padding-left: 73px;
+        padding-right: 53px;
     }
 
     /* Adjust h2 padding on large screens */
