@@ -65,7 +65,38 @@ p {
     border-radius: 0.5rem;
 }
 
+/* Responsive font size for XL screens */
+/* Bigger font for bigger screens */
+@media (min-width: 1600px) {
+    body {
+        font-size: 18px;
+    }
 
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.25rem;
+    }
+}
+
+/* Make hero heading and buttons larger on very large screens */
+@media (min-width: 1600px) {
+    .hero-overlay h1 {
+        font-size: 3.2rem;
+    }
+
+    .hero-overlay .btn {
+        padding: 0.9rem 1.4rem;
+        font-size: 1.1rem;
+    }
+
+    .btn {
+        padding: 0.9rem 1.4rem;
+        font-size: 1.1rem;
+    }
+}
 
 /*Global Styling for buttons*/
 
