@@ -745,6 +745,7 @@ trainers-text {
     border-radius: 1rem;
     color: #fff;
     max-width: 600px;
+    text-align: center;
 }
 
 /* Make return to homepage button bigger for extra text */
