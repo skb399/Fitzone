@@ -167,7 +167,7 @@ p {
     transform: scale(1.1);
 }
 
-/* Navbar links styling (remove underline, change font colour, add bold, preps scale up transition) */
+/* Navbar links styling (remove underline, change font colour, add bold, prepares scale-up transition) Easing learned from W3Schools CSS transitions documentation */
 #navbar a {
     color: var(--highlight-color);
     font-weight: bold;
@@ -690,7 +690,7 @@ trainers-text {
     text-align: center;
 }
 
-/* Keeps email hyperlinks text white like the rest of text preps transition */
+/* Keeps email hyperlinks text white like the rest of text prep transition */
 .card a {
     color: var(--highlight-color);
     display: inline-block;
@@ -778,6 +778,7 @@ trainers-text {
     justify-content: center;
 }
 
+/* Pricing list item text colour */
 #pricing li {
     color: var(--highlight-color);
 }
