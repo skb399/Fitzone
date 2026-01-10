@@ -214,7 +214,7 @@ main {
 #hero-section p {
     margin-top: -2rem;
     padding-bottom: 11px;
-    text-shadow: var(--secondary-color);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
 }
 
 /* Hero image styling */
@@ -587,7 +587,7 @@ footer a:hover {
 /* Testimonial card (homepage)text styling for increased readability */
 small {
     color: var(--highlight-color);
-    font-weight: 110%;
+    font-weight: bold;
 }
 
 /* Wellbeing Cards Styling */
