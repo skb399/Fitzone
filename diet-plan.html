@@ -32,13 +32,12 @@
 <!-- Body with flexbox to push footer to bottom -->
 
 <body class="d-flex flex-column min-vh-100">
-
     <!-- Navbar -->
     <div>
         <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark">
             <div class="container">
                 <a class="navbar-brand" href="index.html"><img src="assets/images/fitzone-logo.webp" alt="Fitzone Logo"
-                        class="logo"></a>
+                        class="logo" aria-label="Fitzone Logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -46,19 +45,19 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link active" aria-current="page" href="index.html" aria-label="Home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="classes.html">Classes</a>
+                            <a class="nav-link" href="classes.html" aria-label="Classes">Classes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="trainers.html">Trainers</a>
+                            <a class="nav-link" href="trainers.html" aria-label="Trainers">Trainers</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="membership.html">Membership</a>
+                            <a class="nav-link" href="membership.html" aria-label="Membership">Membership</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link" href="contact.html" aria-label="Contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -68,133 +67,130 @@
 
     <!--Header-->
     <header class="container-fluid p-0">
+        <!-- Hero Section -->
+        <div class="row g-0" id="hero-section">
+            <div class="col-12">
+                <div class="hero-container">
+                    <img src="assets/images/hero.webp" alt="Hero image showing a man using gym equipment"
+                        class="hero-image" fetchpriority="high" width="659" height="823">
+                    <!-- Hero overlay with logo and tagline -->
+                    <div class="hero-overlay">
+                        <img src="assets/images/fitzone-logo.webp" alt="Fitzone Logo" class="hero-logo">
+                        <h1>Train strong. Move well. Belong.</h1>
+                        <a class="btn btn-primary" href="membership.html#pricing" aria-label="Sign Up">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
-        <!--Header-->
-        <header class="container-fluid p-0">
-            <!-- Hero Section -->
-            <div class="row g-0" id="hero-section">
-                <div class="col-12">
-                    <div class="hero-container">
-                        <img src="assets/images/hero.webp" alt="Hero image showing a man using gym equipment"
-                            class="hero-image" fetchpriority="high">
-                        <!-- Hero overlay with logo and tagline -->
-                        <div class="hero-overlay">
-                            <img src="assets/images/fitzone-logo.webp" alt="" class="hero-logo">
-                            <h1>Train strong. Move well. Belong.</h1>
-                            <a class="btn btn-primary" href="membership.html#pricing">Sign Up</a>
+    <!-- Main content, to hold all key sections of homepage, not a part of the grid structure -->
+    <main class="diet-plans-background">
+        <!-- Diet Plan Section -->
+        <!-- Background image applied using "diet-plans-overlay" CSS class -->
+        <section class="diet-plan-hero" id="diet-plans">
+            <div class="diet-plans-overlay"></div>
+            <div class="container diet-plans-content">
+                <div class="row">
+                    <div class="col-12 col-xl-9 mx-auto text-center">
+                        <div class="wellbeing-panel text-center">
+                            <h2 class="section-title text-center mb-4">Diet and Nutrition with FitZone</h2>
+                            <p>At FitZone, we believe that true fitness goes beyond physical strength. Our diet
+                                plans
+                                are
+                                designed to nurture your mind, body, and spirit, helping you achieve a balanced and
+                                fulfilling
+                                lifestyle.</p>
+                            <h3 class="mt-4">Personalised Nutrition Guidance</h3>
+                            <p>Our expert trainers work closely with you to create personalised diet plans that
+                                align
+                                with your fitness goals, dietary preferences, and lifestyle. Whether you're looking
+                                to
+                                lose
+                                weight,
+                                build muscle, or simply eat healthier, we've got you covered.</p>
+                            <h3 class="mt-4">Diet Plans</h3>
+                            <p>Follow the link below to explore our partners "BBC Good Food" customised diet plans
+                                designed to support your fitness journey.</p>
+                            <a href="https://www.bbcgoodfood.com/health/fitness/what-eat-moderate-normal-training-days"
+                                target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+                                aria-label="Explore Diet Plans">Explore Diet
+                                Plans</a>
+                            <p>Health and fitness begins with what you put into your body.</p>
+                            <a href="index.html" class="btn btn-primary mt-3">Return to Homepage</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </header>
+        </section>
+    </main>
 
-        <!-- Main content, to hold all key sections of homepage, not a part of the grid structure -->
-        <main class="diet-plans-background">
-            <!-- Diet Plan Section -->
-            <!-- Background image applied using "diet-plans-overlay" CSS class -->
-            <section class="diet-plan-hero" id="diet-plans">
-                <div class="diet-plans-overlay"></div>
-                <div class="container diet-plans-content">
-                    <div class="row">
-                        <div class="col-12 col-xl-9 mx-auto text-center">
-                            <div class="wellbeing-panel text-center">
-                                <h2 class="section-title text-center mb-4">Diet and Nutrition with FitZone</h2>
-                                <p>At FitZone, we believe that true fitness goes beyond physical strength. Our diet
-                                    plans
-                                    are
-                                    designed to nurture your mind, body, and spirit, helping you achieve a balanced and
-                                    fulfilling
-                                    lifestyle.</p>
-                                <h3 class="mt-4">Personalised Nutrition Guidance</h3>
-                                <p>Our expert trainers work closely with you to create personalised diet plans that
-                                    align
-                                    with your fitness goals, dietary preferences, and lifestyle. Whether you're looking
-                                    to
-                                    lose
-                                    weight,
-                                    build muscle, or simply eat healthier, we've got you covered.</p>
-                                <h3 class="mt-4">Diet Plans</h3>
-                                <p>Follow the link below to explore our partners "BBC Good Food" customised diet plans
-                                    designed to support your fitness journey.</p>
-                                <a href="https://www.bbcgoodfood.com/health/fitness/what-eat-moderate-normal-training-days"
-                                    target="_blank" rel="noopener noreferrer" class="btn btn-primary"
-                                    aria-label="Explore Diet Plans">Explore Diet
-                                    Plans</a>
-                                <p>Health and fitness begins with what you put into your body.</p>
-                                <a href="index.html" class="btn btn-primary mt-3">Return to Homepage</a>
-                            </div>
-                        </div>
+    <!-- Footer / contact section -->
+    <!-- mt-auto added to push footer to the bottom of the page -->
+    <footer id="contact" class="mt-auto">
+        <div class="container section">
+            <div class="row align-items-stretch">
+
+                <!-- Address / Contact details -->
+                <div class="col-12 col-md-4">
+                    <div class="footer-column h-100 text-center d-flex flex-column align-items-center">
+                        <address>
+                            <strong><i class="fa-solid fa-location-dot"></i> Fitzone</strong><br>
+                            2 Adelaide Terrace<br>
+                            Bristol<br>
+                            BS16 2EE<br>
+                            UK<br>
+                            <i class="fa-solid fa-phone"></i> 0117 123 2345<br>
+                            <i class="fa-regular fa-paper-plane"></i> info@fitzone.co.uk
+                        </address>
                     </div>
                 </div>
-            </section>
-        </main>
 
-        <!-- Footer / contact section -->
-        <!-- mt-auto added to push footer to the bottom of the page -->
-        <footer id="contact" class="mt-auto">
-            <div class="container section">
-                <div class="row align-items-stretch">
-
-                    <!-- Address / Contact details -->
-                    <div class="col-12 col-md-4">
-                        <div class="footer-column h-100 text-center d-flex flex-column align-items-center">
-                            <address>
-                                <strong><i class="fa-solid fa-location-dot"></i> Fitzone</strong><br>
-                                2 Adelaide Terrace<br>
-                                Bristol<br>
-                                BS16 2EE<br>
-                                UK<br>
-                                <i class="fa-solid fa-phone"></i> 0117 123 2345<br>
-                                <i class="fa-regular fa-paper-plane"></i> info@fitzone.co.uk
-                            </address>
-                        </div>
+                <!-- Contact links -->
+                <div class="col-12 col-md-4">
+                    <div class="footer-column h-100 text-center d-flex flex-column align-items-center">
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="contact.html#contact-form">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="contact.html#map">Map</a>
+                            </li>
+                            <li>
+                                <a href="contact.html#opening-times">Opening Times</a>
+                            </li>
+                            <li>
+                                <a href="contact.html#accessibility">Accessibility</a>
+                            </li>
+                        </ul>
                     </div>
+                </div>
 
-                    <!-- Contact links -->
-                    <div class="col-12 col-md-4">
-                        <div class="footer-column h-100 text-center d-flex flex-column align-items-center">
-                            <ul class="list-unstyled">
-                                <li>
-                                    <a href="contact.html#contact-form">Contact Us</a>
-                                </li>
-                                <li>
-                                    <a href="contact.html#map">Map</a>
-                                </li>
-                                <li>
-                                    <a href="contact.html#opening-times">Opening Times</a>
-                                </li>
-                                <li>
-                                    <a href="contact.html#accessibility">Accessibility</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Social media -->
-                    <div class="col-12 col-md-4">
-                        <div class="footer-column h-100 text-center d-flex flex-column align-items-center">
-                            <a class="navbar-brand" href="index.html"><img src="assets/images/fitzone-logo.webp"
-                                    alt="Fitzone Logo" class="logo"></a>
-                            <div class="social-links">
-                                <a href="https://www.instagram.com" target="_blank"
-                                    aria-label="Visit our Instagram page (opens in a new tab)" rel="noopener">
-                                    <i class="fa-brands fa-instagram"></i></a>
-                                <a href="https://www.facebook.com" target="_blank"
-                                    aria-label="Visit our Facebook page (opens in a new tab)" rel="noopener">
-                                    <i class="fa-brands fa-square-facebook"></i></a>
-                                <a href="https://www.x.com" target="_blank"
-                                    aria-label="Visit our X feed (opens in a new tab)" rel="noopener">
-                                    <i class="fa-brands fa-x-twitter"></i></a>
-                            </div>
+                <!-- Social media -->
+                <div class="col-12 col-md-4">
+                    <div class="footer-column h-100 text-center d-flex flex-column align-items-center">
+                        <a class="navbar-brand" href="index.html"><img src="assets/images/fitzone-logo.webp"
+                                alt="Fitzone Logo" class="logo"></a>
+                        <div class="social-links">
+                            <a href="https://www.instagram.com" target="_blank"
+                                aria-label="Visit our Instagram page (opens in a new tab)" rel="noopener">
+                                <i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.facebook.com" target="_blank"
+                                aria-label="Visit our Facebook page (opens in a new tab)" rel="noopener">
+                                <i class="fa-brands fa-square-facebook"></i></a>
+                            <a href="https://www.x.com" target="_blank"
+                                aria-label="Visit our X feed (opens in a new tab)" rel="noopener">
+                                <i class="fa-brands fa-x-twitter"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
-        </footer>
-        <!-- Font Awesome kit -->
-        <script src="https://kit.fontawesome.com/aa9af45995.js" crossorigin="anonymous"></script>
-        <!-- Bootstrap JS -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        </div>
+    </footer>
+    <!-- Font Awesome kit -->
+    <script src="https://kit.fontawesome.com/aa9af45995.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 

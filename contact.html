@@ -26,13 +26,12 @@
 <!-- Body with flexbox to push footer to bottom -->
 
 <body class="d-flex flex-column min-vh-100">
-
     <!-- Navbar -->
     <div>
         <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark">
             <div class="container">
                 <a class="navbar-brand" href="index.html"><img src="assets/images/fitzone-logo.webp" alt="Fitzone Logo"
-                        class="logo"></a>
+                        class="logo" aria-label="Fitzone Logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -40,19 +39,19 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link active" aria-current="page" href="index.html" aria-label="Home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="classes.html">Classes</a>
+                            <a class="nav-link" href="classes.html" aria-label="Classes">Classes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="trainers.html">Trainers</a>
+                            <a class="nav-link" href="trainers.html" aria-label="Trainers">Trainers</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="membership.html">Membership</a>
+                            <a class="nav-link" href="membership.html" aria-label="Membership">Membership</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="contact.html">Contact</a>
+                            <a class="nav-link" href="contact.html" aria-label="Contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -67,12 +66,12 @@
             <div class="col-12">
                 <div class="hero-container">
                     <img src="assets/images/hero.webp" alt="Hero image showing a man using gym equipment"
-                        class="hero-image" fetchpriority="high">
+                        class="hero-image" fetchpriority="high" width="659" height="823">
                     <!-- Hero overlay with logo and tagline -->
                     <div class="hero-overlay">
-                        <img src="assets/images/fitzone-logo.webp" alt="" class="hero-logo">
+                        <img src="assets/images/fitzone-logo.webp" alt="Fitzone Logo" class="hero-logo">
                         <h1>Train strong. Move well. Belong.</h1>
-                        <a class="btn btn-primary" href="membership.html#pricing">Sign Up</a>
+                        <a class="btn btn-primary" href="membership.html#pricing" aria-label="Sign Up">Sign Up</a>
                     </div>
                 </div>
             </div>
